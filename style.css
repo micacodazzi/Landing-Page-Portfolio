@@ -11,13 +11,8 @@ body{
     height: 100vh;
 }
 
-header{
-    width:100%;
-    height: 8vh;
-    background-color: #161615;
-}
-
 /*ESTILOS ID*/
+#logo-codesign
 
 
 /*ESTILOS CLASES*/
@@ -30,6 +25,9 @@ header{
 }
 
 .navbar{
+    width:100%;
+    height: 8vh;
+    background-color: #161615;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 16px;
