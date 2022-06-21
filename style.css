@@ -32,7 +32,9 @@ header{
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 16px;
     padding: 0 100px;
-    align-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-rows: auto;
 }
 
 .menuitems{
