@@ -30,4 +30,5 @@ header{
 }
 
 .navbar{
+    display: inline-grid;
 }
