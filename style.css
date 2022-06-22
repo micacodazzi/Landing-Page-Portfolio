@@ -9,7 +9,8 @@ box-sizing: border-box;
 body{
     width: 100%;
     height: 100%;
-    position: absolute
+    position: absolute;
+    background-color: #161615;
 }
 
 header{
@@ -43,19 +44,23 @@ a:hover::before {
 }
 
 a:hover {
-  transform-origin: left;
-  transform: scaleX(1);
-  color: #F3B200;
+  font-weight:300;
 }
 
+
 /*ESTILOS ID*/
+
 #logo-codesign{
     width:114px;
 }
 
+#bannerhome{
+    width:100%;
+}
 
 
 /*ESTILOS CLASES*/
+
 .navbar{
     height:100%;
     display: inline-grid;
