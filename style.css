@@ -1,193 +1,357 @@
-/*ESTILOS GLOBALES*/
+/*Variables - Paleta Cromática*/
+
+:root {
+    --yellow: #F3B200;
+    --gray: #161615;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 900;
+}
+
+/*Estilo Global*/
 
 *{
-margin:0;
-padding:0;
-box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+
 }
 
-body{
+* img {
     width: 100%;
-    height: 100vh;
-    background-color: black;
+    height: auto;
 }
 
-li{
-    list-style: none;
-}
-
-header{
-    background-color: #161615;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 20px;
-}
-
-ul{
-display: flex;
-flex-wrap: nowrap;
-justify-content: flex-end;
-align-items: center;
-align-content: center;
+body {
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray);
 }
 
 a {
-  color: white;
-  position: relative;
-  text-decoration: none;
+    text-decoration: none;
 }
 
-a::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #F3B200;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+li {
+    list-style: none;
 }
 
-a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+nav {
+    width: 90%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/*Media Queries*/
+
+/*Header*/
+@media (min-width: 1200px){
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 1rem;
+        background: var(--yellow);
+    }
+
+    #logo-codesign {
+        width: 100%;
+    }
+
+    #navbar ul{
+        list-style: none;
+    }
+
+    #navbar ul li a {
+        font-size: 17px;
+        font-weight: var(--regular)
+    }
+
+    .checkbutton {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkbutton {
+        color: var(--yellow);
+    }
+
+    #logo-codesign {
+        width: 114px;
+    }
+
+    #navbar {
+        width: 100%;
+    }
+
+    .menuitems {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: lighter;
+        font-size: 15px;
+        text-decoration: none;
+        margin: 20px;
+        font-weight: 300;
+    }
+
+/*Section Hero*/
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .foto-hero img {
+        width: 700px;
+    }
+    
+    .info-hero {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        width: 600px;
+        margin-left: 5%;
+    }
+
+/*Section Services */
+
+.description__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    padding: 8rem 0;
+    background: var(--blue);
+}
+
+.description__section h2 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 2rem;
+}
+
+.description__section h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: var(--small);
+    max-width: 300px;
+    margin-bottom: 5rem;
+}
+
+.info-card {
+    width: 40%;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+    padding: 20px;
+}
+
+.card p {
+    max-width: 300px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: var(--small);
+}
+    
 }
 
 
-h1{
-    font-size: 100px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin-bottom: -6%;
-}
+/*MOBILE*/
 
-h2{
-    font-size: 100px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    margin-left: 30%;
-}
+/*Header*/
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background: var(--yellow);
+    }
+    
+    #logo-codesign {
+        width: 25%;
+    }
 
-h3{
-    font-size: 30px;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    text-align: left;
-    line-height: 1.2;
-}
+    #check {
+        display: none;
+    }
 
+    .checkbutton {
+        display: block;
+        float: right;
+    }
 
-/*ESTILOS HEADER*/
+    .menuitems {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+    }
 
-#logo-codesign{
-    width:114px;
-}
+    #navbar ul li a {
+        font-size: 15px;
+    }
 
-.navbar{
+    #navbar ul {
+        position: fixed;
+        width: 100%;
+        background-color: var(--gray);
+        display:none;
+    }
+
+/*Section Hero*/
+
+.hero {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-.menuitems{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-weight: lighter;
-    font-size: 15px;
-    text-decoration: none;
-    margin: 20px;
-    font-weight: 300;
+.foto-Hero img {
+    display: none;
 }
 
-/*ESTILOS SECTION HERO*/
-
-.hero{
-    display:flex;
+.info-hero {
+    margin-left: 0px;
+    width: 100%;
 }
 
-.foto-hero img{
-    width:700px;
+.info-hero h1 {
+    font-size: 65px;
 }
 
-.info-hero{
-display: flex;
-flex-direction: column;
-align-content: center;
-justify-content: center;
-width: 600px;
-margin-left: 5%;
+.info-hero h2 {
+    font-size: 60px;
+    margin-left: 0px;
 }
 
-.button-hero{
-display: flex;
-flex-wrap: nowrap;
-align-content: center;
-justify-content: space-evenly;
+.button-hero {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-#about-me{
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: white;
-    border: 1px solid white;
-    margin-top: 5%;
-    background-color: transparent;
-    width: 250px;
-    height: 70px;
-}
-
-#about-me:hover{
-    font-family: 'Poppins', sans-serif;
-    font-size:18px;
-    color: black;
-    margin-top:5%;
-    background-color: white;
-    border: 1px solid white;
-    width: 250px;
-    height: 70px;
-    cursor: pointer;
-}
-
-#contact{
-    font-family: 'Poppins', sans-serif;
-    font-size:18px;
-    color: black;
-    margin-top:5%;
-    background-color: white;
-    border: 1px solid white;
-    width: 250px;
-    height: 70px;
-}
-
-#contact:hover{
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: white;
-    border: 1px solid white;
-    margin-top: 5%;
-    background-color: transparent;
-    width: 250px;
-    height: 70px;
-    cursor: pointer;
-}
-
-/*ESTILOS SECTION DESCRIPTION*/
+/*Section Description*/
 .description{
-display: flex;
-flex-direction: column;
-align-content: center;
-justify-content: center;
-align-items: center;
-padding-bottom: 20%;
+    padding
+}
+
+}
+
+
+
+
+/*Estilos Section Hero*/
+
+
+.hero {
+    display: flex;
+}
+
+.foto-hero img {
+    width: 700px;
+}
+
+/*.info-hero {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 600px;
+    margin-left: 5%;
+}
+*/
+
+.button-hero {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+#about-me {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5%;
+    background-color: transparent;
+    width: 250px;
+    height: 70px;
+}
+
+#about-me:hover {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 5%;
+    background-color: white;
+    border: 1px solid white;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+}
+
+#contact {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 5%;
+    background-color: white;
+    border: 1px solid white;
+    width: 250px;
+    height: 70px;
+}
+
+#contact:hover {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5%;
+    background-color: transparent;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+}
+
+/*Estilos Section Description*/
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 .description p {
@@ -198,3 +362,5 @@ padding-bottom: 20%;
     width: 80%;
     margin-top: 2%;
 }
+
+

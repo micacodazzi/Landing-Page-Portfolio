@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets\imgs\FavIcon.svg" type="image/svg+xml">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <!-- Title -->
     <title>Codesign - Materializing your ideas</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <img id="logo-codesign" src="assets\imgs\logo-header.svg" alt="">
-        <nav class="navbar">
+        <nav id="navbar">
             <ul>
                 <li><a class="menuitems" href="#home">Home</a></li>
                 <li><a class="menuitems" href="#aboutme">About Me </a></li>
@@ -23,12 +28,14 @@
                 <li><a class="menuitems" href="#contact">Contact</a></li>
             </ul>
             <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fa fa-bars"></i>   
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars"></i>
             </label>
         </nav>
     </header>
+    <!-- Main -->
     <main>
+        <!-- Sección Hero -->
         <section class="hero">
             <div class="foto-Hero">
                 <img src="assets\imgs\Foto-Hero-Section.jpg"
@@ -44,14 +51,39 @@
                 </div>
             </div>
         </section>
+        <!-- Sección Description -->
         <section class="description">
-                <p>
-                    If you want to materialize your project and go beyond expectations, you have found the right
-                    website. My main mission is not only to understand your vision, but to prioritize the user
-                    experience that will consume the final project.
-                    From Argentina to all areas of the world, time and language will not be a barrier because when we
-                    have a common goal, there is no obstacle that can stand in the way.</p>
+            <p> If you want to materialize your project and go beyond expectations, you have found the right
+                website. My main mission is not only to understand your vision, but to prioritize the user
+                experience that will consume the final project.
+                From Argentina to all areas of the world, time and language will not be a barrier because when we
+                have a common goal, there is no obstacle that can stand in the way.</p>
         </section>
+        <!-- Sección Services -->
+        <section class="description__section" id="description">
+            <h2>No te quedes sin tu pedido</h2>
+            <h3>Dale perry, no te podes quedar sin tu Pedimon! Mira lo facil que es</h3>
+            <!-- Sección Cards | Inicio -->
+            <div class="card__container">
+                <!-- -->
+                <div class="card">
+                    <img src="./img/info-icon-1.png" alt="info 1" class="info-card" />
+                    <p>Elegis el Pedi que vos queres de la lista de aca abajo (si hay)</p>
+                </div>
+                <!--* Card 2 -->
+                <div class="card">
+                    <img src="./img/info-icon-2.png" alt="info 1" class="info-card" />
+                    <p>Lo agregas al carrito de la camada tiene que haber alguno en algun lado</p>
+                </div>
+                <!--* Card 3 -->
+                <div class="card">
+                    <img src="./img/info-icon-3.png" alt="info 1" class="info-card"/>
+                    <p>Le das al boton de comprar y listo! Ya tenes tus Pedis en tu casa muy pronto</p>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Cards | Fin -->
+        <!-- Sección Services | Fin -->
     </main>
 </body>
 <footer>
