@@ -316,6 +316,7 @@ main {
 
     .info-icon {
         width: 13%;
+        padding: 2%;
     }
 
     .contactinfo p {
