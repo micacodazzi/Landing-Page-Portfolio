@@ -29,7 +29,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--gray);
+    background-color: #000;
 }
 
 a {
@@ -57,7 +57,7 @@ main {
         display: flex;
         justify-content: center;
         padding: 1rem 1rem;
-        background: var(--yellow);
+        background: var(--gray);
     }
 
     #logo-codesign {
@@ -111,7 +111,44 @@ main {
         font-weight: 300;
     }
 
-    /*Section Hero*/
+    #navbar a {
+        background-image: linear-gradient(
+          to right,
+          #F3B200,
+          #F3B200 50%,
+          white 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #navbar a:before{
+        content: '';
+        background: #F3B200;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #navbar a:hover {
+       background-position: 0;
+      }
+      
+      #navbar a:hover::before{
+        width: 100%;
+      }
+
+    /*Hero Section*/
 
     .hero {
         display: flex;
@@ -131,7 +168,30 @@ main {
         margin-left: 5%;
     }
 
-    /*Section Services */
+    .info-hero h1 {
+        font-size: 105px;
+        color: white;
+        font-weight: 600;
+        margin-bottom: -6%;
+    }
+
+    .info-hero h2 {
+        font-size: 105px;
+        color: var(--yellow);
+        font-weight: 600;
+        margin-left: 23%;
+    }
+
+    .info-hero h3 {
+        font-size: 25px;
+        text-align: left;
+        font-weight: 300;
+        margin-bottom: 2%;
+        color: white;
+        max-width: 80%;
+    }
+
+    /*Services Section */
 
     .description__section {
         display: flex;
@@ -139,8 +199,7 @@ main {
         justify-content: center;
         align-items: center;
         color: var(--white);
-        padding: 8rem 0;
-        background: var(--blue);
+        padding: 5% 0;
     }
 
     .description__section h2 {
@@ -149,8 +208,6 @@ main {
         text-align: center;
         color: var(--yellow);
         margin-bottom: 2rem;
-
-
     }
 
     .description__section h3 {
@@ -183,6 +240,15 @@ main {
         padding: 20px;
     }
 
+    .grow {
+        transition: all .2s ease-in-out;
+        width:40%;
+    }
+
+    .grow:hover {
+        transform: scale(1.1);
+    }
+
     .card p {
         max-width: 290px;
         text-align: center;
@@ -198,6 +264,130 @@ main {
         align-content: center;
         justify-content: center;
         align-items: center;
+    }
+
+    /*Contact*/
+
+    .contact__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    #h2contact {
+        width: 100%;
+    }
+
+    .contact__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0;
+    }
+
+    .contact__section h2 {
+        font-size: 45px;
+        font-weight: 600;
+        text-align: center;
+        color: var(--yellow);
+        margin-bottom: 2%;
+    }
+
+    .contactinfo__container {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contactinfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-icon {
+        width: 13%;
+    }
+
+    .contactinfo p {
+        max-width: 290px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.2em;
+        color: white;
+    }
+
+    .contactform__container {
+        width: 40%;
+    }
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .fields {
+        background-color: var(--gray);
+        border-bottom: 1px solid white;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        margin-bottom: 4%;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    #submitbutton {
+        background-color: var(--yellow);
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        color: white;
+        border: none;
+        padding: 1%;
+        width: 30%;
+    }
+
+    ::placeholder {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*FOOTER*/
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 5% 0 0 0;
+    }
+
+    footer h4 {
+        color: white;
+        font-weight: 200;
+        font-size: 13px;
+    }
+
+    .socialmedia {
+        text-align: end;
+    }
+
+    .socialmedia img {
+        width: 5%;
+        padding: 0 1%;
     }
 }
 
@@ -267,6 +457,14 @@ main {
     .info-hero h2 {
         font-size: 60px;
         margin-left: 0px;
+    }
+
+    .info-hero h3 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 2%;
+        color: white;
     }
 
     .button-hero {
@@ -356,7 +554,7 @@ main {
     cursor: pointer;
 }
 
-/*Estilos Section Description*/
+/*Description Section*/
 
 .description {
     display: flex;
@@ -376,4 +574,3 @@ main {
     width: 80%;
     margin-top: 2%;
 }
-

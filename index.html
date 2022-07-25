@@ -35,7 +35,7 @@
     </header>
     <!-- Main -->
     <main>
-        <!-- Sección Hero -->
+        <!-- Hero Section -->
         <section class="hero">
             <div class="foto-Hero">
                 <img src="assets\imgs\Foto-Hero-Section.jpg"
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </section>
-        <!-- Sección Description -->
+        <!-- Description Section -->
         <section class="description">
             <p> If you want to materialize your project and go beyond expectations, you have found the right
                 website. My main mission is not only to understand your vision, but to prioritize the user
@@ -59,47 +59,91 @@
                 From Argentina to all areas of the world, time and language will not be a barrier because when we
                 have a common goal, there is no obstacle that can stand in the way.</p>
         </section>
-        <!-- Sección Services -->
+        <!-- Services Services -->
         <section class="description__section" id="description">
             <h2>Services</h2>
             <h3>The services range from the creative idea to the final production of each piece.</h3>
-            <!-- Sección Cards | Inicio -->
+            <!-- Cards Section | Inicio -->
             <div class="card__container">
-                <!-- Web design - Card 1-->
+                <!-- Web Design - Card 1-->
                 <div class="card">
-                    <img src="./assets/imgs/webdesign-icon.svg" alt="Web design icon" class="info-card" />
+                    <img class="grow" src="./assets/imgs/webdesign-icon.svg" alt="Web design icon" class="info-card" />
                     <h4>Web Design & Development</h4>
                     <p>Responsive websites on platforms like Wordpress, Opencart and fully developed with HTML5 and
                         CSS3. </p>
                 </div>
                 <!-- Branding - Card 2 -->
                 <div class="card">
-                    <img src="./assets/imgs/branding-icon.svg" alt="Branding icon" class="info-card" />
+                    <img class="grow" src="./assets/imgs/branding-icon.svg" alt="Branding icon" class="info-card" />
                     <h4>Branding</h4>
                     <p>Design of logos, visual identity, brand guides, stationery, shop windows and stands.</p>
                 </div>
                 <!-- Editorial design - Card 3 -->
                 <div class="card">
-                    <img src="./assets/imgs/editorialdesign-icon.svg" alt="Editorial icon" class="info-card" />
+                    <img class="grow" src="./assets/imgs/editorialdesign-icon.svg" alt="Editorial icon" class="info-card" />
                     <h4>Editorial</h4>
                     <p>Brochures, magazines, books, product catalogs, infographics, digital illustrations.</p>
                 </div>
                 <!-- SocialMedia design - Card 3 -->
                 <div class="card">
-                    <img src="./assets/imgs/socialmedia-icon.svg" alt="Editorial icon" class="info-card" />
+                    <img class="grow" src="./assets/imgs/socialmedia-icon.svg" alt="Editorial icon" class="info-card" />
                     <h4>Social Media</h4>
                     <p>Fan pages, post design and post scheduling, promotional campaigns, copywriting.</p>
                 </div>
             </div>
         </section>
-        <!-- Sección Cards | Fin -->
-        <!-- Sección Services | Fin -->
-        <!-- Sección Contact | Inicio -->
+        <!-- Cards Section | Fin -->
+        <!-- Services Section | Fin -->
+        <!-- Contact Section | Inicio -->
+        <section class="contact__section">
+            <div class="contact__container">
+                <div id="h2contact">
+                    <h2>Let's work together!</h2>
+                </div>
 
+                <!-- Contact Info Container | Inicio -->
+                <div class="contactinfo__container">
+
+                    <!-- Location-->
+                    <div class="contactinfo">
+                        <img src="./assets/imgs/location-icon-03.svg" alt="Web design icon" class="info-icon" />
+                        <p>Buenos Aires, Argentina</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contactinfo">
+                        <img src="./assets/imgs/email-icon-02.svg" alt="Web design icon" class="info-icon" />
+                        <p>codazzidesign@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Contact Info Container | Fin -->
+
+                <!-- Form Container | Inicio -->
+                <div class="contactform__container">
+                    <form id="contact-form" action="/action_page.php">
+                        <input type="text" class="fields" name="firstname" placeholder="Your name">
+                        <input type="tel" class="fields" name="phonenumber" placeholder="Your phone number">
+                        <input type="email" class="fields" name="email" placeholder="Your email">
+                        <input type="text" class="fields" name="subject" placeholder="Subject">
+                        <textarea name="textarea" class="fields" placeholder="Tell me about your idea or project"></textarea>
+                        <input type="submit" id="submitbutton" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section | Fin -->
     </main>
 </body>
 <footer>
-
+    <div class="copyright">
+        <h4>Copyright © Codesign 2022 - All rights reserved</h4>
+    </div>
+    <div class="socialmedia">
+        <a href="https://www.behance.net/codazzidesign"><img src="./assets/imgs/behance-03.svg" alt="Behance logo"></a>
+        <a href="https://www.linkedin.com/in/micaelamunozcodazzi/"><img src="./assets/imgs/linkedin-02.svg"
+                alt="Linkedin logo"></a>
+        <a href="https://github.com/micacodazzi"><img src="./assets/imgs/github-04.svg" alt="Github logo"></a>
+    </div>
 </footer>
 
 </html>
